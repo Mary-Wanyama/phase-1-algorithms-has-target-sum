@@ -1,9 +1,21 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  // iterate throught the array to find a number
+  for (let i = 0; i < array.length; i++) {
+		for (let j = i + 1; j < array.length; j++) {
+			if (array[i] + array[j] === target) {
+				return true;
+			}
+		}
+	}
+	return false;
+  //iterate through the array to find another number
+  // find the sum of the numbers and compare to the target
 }
 
 /* 
   Write the Big O time complexity of your function here
+  O(n**2)
 */
 
 /* 
